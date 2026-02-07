@@ -5,12 +5,12 @@ public class Calculator {
 
         Scanner input = new Scanner(System.in);
 
-        // ask user for two whole numbers
-        System.out.print("Enter the first whole number: ");
-        int num1 = input.nextInt();
+        // ask user for two floating point numbers
+        System.out.print("Enter the first number: ");
+        double num1 = input.nextDouble();
 
-        System.out.print("Enter the second whole number: ");
-        int num2 = input.nextInt();
+        System.out.print("Enter the second number: ");
+        double num2 = input.nextDouble();
 
         // ask user which operation to perform
         System.out.print("Would you like to perform addition, subtraction, multiplication, or division? ");
@@ -31,12 +31,11 @@ public class Calculator {
         } 
         else if (choice.equalsIgnoreCase("division")) {
             System.out.println("You chose division.");
-            
+
             if (num2 == 0) {
                 System.out.println("Error: Cannot divide by zero.");
             } else {
-                double result = (double) num1 / num2;
-                System.out.println("Result: " + result);
+                System.out.println("Result: " + (num1 / num2));
             }
         } 
         else {
