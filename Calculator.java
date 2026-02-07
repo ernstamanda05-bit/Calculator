@@ -16,28 +16,27 @@ public class Calculator {
         System.out.print("Would you like to perform addition, subtraction, multiplication, or division? ");
         String choice = input.next();
 
-        // perform operation based on user choice
         if (choice.equalsIgnoreCase("addition")) {
             System.out.println("You chose addition.");
             System.out.println("Result: " + (num1 + num2));
-        } 
+        }
         else if (choice.equalsIgnoreCase("subtraction")) {
             System.out.println("You chose subtraction.");
             System.out.println("Result: " + (num1 - num2));
-        } 
+        }
         else if (choice.equalsIgnoreCase("multiplication")) {
             System.out.println("You chose multiplication.");
             System.out.println("Result: " + (num1 * num2));
-        } 
+        }
         else if (choice.equalsIgnoreCase("division")) {
             System.out.println("You chose division.");
 
             if (num2 == 0) {
-                System.out.println("Error: Cannot divide by zero.");
+                System.out.println("Error: Divide by Zero");
             } else {
                 System.out.println("Result: " + (num1 / num2));
             }
-        } 
+        }
         else {
             System.out.println("Invalid option.");
         }
